@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: cadetblue;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+header {
+  background-color: aliceblue;
+}
+
+header ul {
+  height: 30px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  font-family: monospace;
+  width: 100%;
+  height: 100%;
+  /* font-size: 1.5rem; */
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  height: 32px;
+  font-size: 1.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header li {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  list-style: none;
+  background-color: bisque;
+  cursor: pointer;
+}
+
+header li:first-child {
+  border-right: 1px solid blue;
+}
+header li:hover {
+  background-color: darkorange;
+}
+
+#canvas_container,
+.scoreboard {
+  box-sizing: border-box;
+  background-color: azure;
+  margin: 0;
+}
+.scoreboard {
+  width: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.record {
+  box-sizing: border-box;
+  height: 32px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  line-height: 32px;
+
+  list-style: none;
+  background-color: plum;
+  border-bottom: 3px solid black;
+}
+
+#own {
+  background-color: goldenrod;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab__selected {
+  background-color: #000;
+}
+.submit ul {
+  list-style: none;
+}
+.submit {
+  box-sizing: border-box;
+  margin-top: -10px;
+  border: 2px solid blue;
+  background-color: bisque;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.record li {
+  font-family: monospace;
+  width: 31%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* font-size: 1rem; */
+  display: inline-block;
+  text-align: center;
+}
+
+.record ul {
+  white-space: nowrap;
+  padding: 0;
+}
+
+.scoreboard,
+#canvas_container {
+  height: calc(100vh - 30px);
+  margin-top: 32px;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  z-index: 1;
+  margin: -25px 0 0 -25px;
+  border-top: 9px solid blue;
+  border-right: 9px solid green;
+  border-bottom: 9px solid red;
+  border-left: 9px solid pink;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.vpn{
+  background-color: lightskyblue;
+  position: relative;
+  top: 30%;
+}
+
+.vpn li{
+  width: 100%;
+}

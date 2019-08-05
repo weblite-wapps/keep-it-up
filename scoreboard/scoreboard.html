@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Score Board
+    </title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container" id="cnt">
+      <header>
+        <ul>
+          <li>
+            <a href="../index.html">Play!</a>
+          </li>
+          <li>
+            <a href="scoreboard.html">Scoreboard</a>
+          </li>
+        </ul>
+      </header>
+      <div class="scoreboard" id="scrbrd">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCGrgYcPdZdR1wGqesyYnLn_KYECDWT7u8",
+        authDomain: "keepitup-5530a.firebaseapp.com",
+        databaseURL: "https://keepitup-5530a.firebaseio.com/",
+        projectId: "keepitup-5530a",
+        storageBucket: "",
+        messagingSenderId: "182004961799",
+        appId: "1:182004961799:web:e3cbcfb77ceb0420"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var database = firebase.database();
+    </script>
+    <script src="scores.js"></script>
+  </body>
+</html>
