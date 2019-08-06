@@ -22,7 +22,7 @@ function show_records(scores_object) {
   scoreboard.innerHTML = "";
   for (let record of scores_list) {
     scoreboard.innerHTML += `
-            <div class="record" ${record.name === userName ? 'id="own"' : ""}>
+            <div class="record">
             <ul>
             <li class="left">${record.name}</li>
             <li class="center">${record.date}</li>
